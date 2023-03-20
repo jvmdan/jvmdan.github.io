@@ -2158,6 +2158,11 @@ progress {
 .form-label {
   margin-bottom: 0.5rem;
 }
+.header-image {
+  width:100%;
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.95) ), url('../assets/background.jpeg');
+  background-size: 100%;
+}
 
 .col-form-label {
   padding-top: calc(0.375rem + 1px);
