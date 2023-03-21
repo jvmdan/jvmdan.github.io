@@ -21,10 +21,10 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
-                        <li class="nav-item"><a class="nav-link text-success" href="register.html">Free Trial</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="register.html">Free Trial</a></li>
                     </ul>
                 </div>
             </div>
@@ -39,49 +39,66 @@
                             <p class="lead text-white-50 mb-4" style="text-shadow: 0px 0px 5px #000">A low-cost platform for the real-time evaluation of market sentiment in equity trading.</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                                 <a class="btn btn-outline-light btn-lg px-4" href="about.html">Learn More</a>
-                                <a class="btn btn-outline-success btn-lg px-4 me-sm-3" href="register.html">Free Trial</a>
+                                <a class="btn btn-success btn-lg px-4 me-sm-3" href="register.html">Free Trial</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- Features section-->
-        <section class="py-3 border-bottom" id="features">
-            <div class="container px-4 my-5">
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
-                        <h2 class="h4 fw-bolder">Big Data Analysis</h2>
-                        <p>
-                            Using artificial intelligence (AI) we quantify how human emotions are driving asset prices, helping customers 
-                            to gain an upper hand when operating within public financial markets.
-                        </p>
-                        <a class="text-decoration-none text-success" href="about.html">
-                            Learn more <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
-                        <h2 class="h4 fw-bolder">Enterprise Ready</h2>
-                        <p>
-                            Whether you are an individual trader or a large organisation operating in the finance industry, we have
-                            a flexible pricing strategy that scales to businesses of all shapes & sizes.
-                        </p>
-                        <a class="text-decoration-none text-success" href="about.html">
-                            Learn more <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
-                        <h2 class="h4 fw-bolder">Highly Extensible</h2>
-                        <p>
-                            A concise but powerful API supports integration into existing financial modelling tools, 
-                            allowing you to use our proprietary sentiment analysis engine in your own valuation calculations. 
-                        </p>
-                        <a class="text-decoration-none text-success" href="about.html">
-                            Learn more <i class="bi bi-arrow-right"></i>
-                        </a>
+        <!-- Contact section-->
+        <section class="bg-light py-3" id="register">
+            <div class="container px-4 my-5 px-4">
+                <div class="text-center mb-5">
+                    <div class="feature bg-success bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                    <h2 class="fw-bolder">Request free trial</h2>
+                    <p class="lead mb-0">We'll notify you when the public beta becomes available.</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="ae96c332-00c3-441e-8a02-396337c20eb0">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Company input -->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="company" type="text" placeholder="Company name (optional)"/>
+                                <label for="company">Company (optional)</label>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-success btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -92,6 +109,7 @@
                 <p class="m-0 text-left">
                     <span class="text-white">&copy; RxMarkets 2023</span>
                     <span class="text-white-50">| <a href="register.html" class="text-success" style="text-decoration: none">Register your interest</a></span>
+
                 </p>
             </div>
         </footer>
